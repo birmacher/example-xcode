@@ -4,4 +4,4 @@ script:
 after_success:
   - pip install --user git+git://github.com/codecov/codecov-python.git
   - which codecov
-  - /Users/travis/Library/Python/2.7/bincodecov
+  - /Users/travis/Library/Python/2.7/bin/codecov
