@@ -2,4 +2,6 @@ language: objective-c
 script: 
   - xctool -project example.xcodeproj -scheme exampleTests build test -sdk iphonesimulator GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES
 after_success:
-  - bash <(curl -s https://codecov.io/bash)
+  - pip install --user git+git://github.com/codecov/codecov-python.git
+  - which codecov
+  - codecov
